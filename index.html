@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Slike/1Home/1.LogoTransparent - mala.png">
+    <script  type="text/javascript" src="skripte/jquery-2.1.3.min.js"></script>
+    <script defer src="skripte/eras.js"></script>
+    <script defer src="skripte/PravougaonikHover.js"></script>
+    <script defer src="skripte/sparcle.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+
+
+        <nav id="Menu" class="menu"> 
+
+            
+                <a href="#NaslovSeries">SERIES</a>
+                <a href="#NaslovGlumci">CAST</a>
+                <a href="#Menu"><img src="Slike/1Home/1.LogoTransparent - mala.png" alt="Logo Star Wars"></a>
+                <a href="#NaslovEre">ERAS</a>
+                <a href="#NaslovMerch">MERCH</a>
+           
+
+          
+        </nav>
+
+        <button class="hamburger">&#9776;</button> 
+        <button class="cross">&#735;</button>
+
+    </header>
+
+
+    <main>
+
+        <div id="HeroHeader">
+
+            <figure>
+                <img src="Slike/1Home/Heroheader/1.HeroH1.png">
+                <img src="Slike/1Home/Heroheader/2.HeroH.png" alt="Hero header">
+                <img src="Slike/1Home/Heroheader/3.HeroH.png" alt="Hero header">
+                <img src="Slike/1Home/Heroheader/4.HeroH.png" alt="Hero header">
+                <img src="Slike/1Home/3.Heroheaderr ombre tamniji.png" alt="Hero header">
+            </figure>
+
+            <!--<div id="MaliLogo">
+                <img src="Slike/1Home/1.MayThe4th.webp" alt ="Maythe4th logo">
+            </div>-->
+
+            <div id="heroheaderText">
+                <p>JOIN US ON  </p>
+                <p>MAY 4TH</p>
+                <p>Star Wars Day is one of the most important events for fans. That's why
+                    we are gathering together to celebrate this special day. </p>
+                <a href="#Uvod">TICKETS</a>
+            </div>
+
+        </div>
+
+
+
+
+        <div id="NewMain">
+
+            <div id="HodajuciTekst">
+                <h1> MAY THE FORCE BE WITH YOU!  MAY THE FORCE BE WITH YOU! </h1>
+            </div>
+        
+
+
+            <div id="History">
+                <div id="opisHistory">
+                    <h1>Star Wars Day</h1>
+                    <p>Star Wars Day is an informal commemorative day
+                        observed annually on May 4 to celebrate the Star
+                        Wars media franchise created by filmmaker George
+                        Lucas. Observance of the day spread quickly
+                        through media and grassroots celebrations since the
+                        franchise began in 1977.
+
+                        The date originated from the pun "May the Fourth
+                        be with you", a variant of the Star Wars catchphrase
+                        "May the Force be with you". Even though the
+                        holiday was not created or declared by Lucasfilm,
+                        many Star Wars fans have chosen to celebrate the
+                        holiday. It has since been embraced by Lucasfilm
+                        and the Walt Disney Company as an annual
+                        celebration of Star Wars. If you are a fan, then National Star Wars Day allows you to dress like
+                        your favorite character, say your favorite lines from the series and catch a movie or read a
+                        book.</p>
+                </div>
+
+                <div id="crniPravougaonikHistory">
+
+                    <div class="textPoligonHistory">
+                        <div id="Godina1">
+                            <h3>1977</h3>
+                            <p>The first "Star Wars" film is released. George Lucas' first Star Wars blockbuster hits US
+                                theaters.</p>
+                        </div>
+                    </div>
+
+                    <div class="textPoligonHistory">
+                        <div id="Godina2">
+                            <h3>1999</h3>
+                            <p>The Phantom Menace finally debuted in theaters. While there was a 16 year gap from the
+                                Return of the Jedi.</p>
+                        </div>
+                    </div>
+
+                    <div class="textPoligonHistory">
+                        <div id="Godina3">
+                            <h3>2015 </h3>
+                            <p>The Force Awakens hit theaters and the audience was delighted with this film.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sparcle-container">
+                <img class="sparcle-icon" src="Slike/sparcles/brod2.png" alt="spaceship">
+            </div>
+           
+
+
+            
+            <div id="gallery">
+                <button onclick="moveLeft()">&lt</button>
+                <div id="image-container"></div>
+                <button onclick="moveRight()">&gt</button>
+            </div>
+
+
+
+
+            <div class="sparcle-container">
+                <img class="sparcle-icon-smer" src="Slike/sparcles/brodlevo1.png" alt="spaceship">
+            </div>
+
+            <div id="KarteProdaja">
+                <h1>Ticket sales</h1>
+                <p>
+
+                    You will need tickets to enter this fantastic Star Wars event. Hurry up to buy your tickets in time
+                    because places are limited. Tickets for the Star Wras event can be bought online already, and from
+                    January 2024 it will be possible to buy them at the Belgrade Fair as well.
+                    Soon you will be informed about the prize game, where two people will be able to win their tickets
+                    for free, and with them also VIP privileges. Follow us regularly and maybe you too will become part
+                    of our VIP team.
+                </p>
+                <a href="#Uvod">BUY NOW</a>
+            </div>
+
+
+            
+
+
+            <div id="WhatYouCanExpect">
+                <h1>What can you expect to see at the event?</h1>
+
+                <div id="Poglavlja">
+                    <a href="#NaslovSeries">
+                        <div class="poglavlje hidden hiddenMobile">
+                            <div id="poglavlje1">
+                                <h3>premiere of a new series</h3>
+                                <p>You will be able to see the official screening of the latest series and enjoy new
+                                    episodes starring your favorite actors.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#NaslovGlumci">
+                        <div class="poglavlje hidden hiddenMobile">
+                            <div id="poglavlje2">
+                                <h3>your favorite actors</h3>
+                                <p>You will be able to see some actors from the Ahsoka series, and if you have
+                                    the opportunity, you will take pictures with them.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#NaslovEre">
+                        <div class="poglavlje hidden hiddenMobile">
+                            <div id="poglavlje3">
+                                <h3>eras of star wars</h3>
+                                <p>The event will be divided into 3 halls at the fair, and each of them will be inspired
+                                    by an era from the Star Wars world.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#NaslovMerch">
+                        <div class="poglavlje hidden hiddenMobile">
+                            <div id="poglavlje4">
+                                <h3>star wars merch store</h3>
+                                <p>In each of the halls, various stands await you where you can buy some of your
+                                    favorite things from Star Wars movies and series.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="sparcle-container">
+                <img class="sparcle-icon" src="Slike/sparcles/desno2.png" alt="spaceship">
+            </div>
+
+
+
+            
+
+            <div id="NaslovSeries">
+                <h1>Premiere of the New Series</h1>
+            </div>
+
+            <div id="TriPravougaonika">
+                <div class="pravougaonik" id="PrviPravougaonik">
+                    <div id="textUnutra">
+                        <!--<h1><span>THE </span>PREMIERE</h1>-->
+                        <p>The premiere of the latest Star Wars series "Ahsoka" will be shown at this event. Together
+                            with your friends, you will be able to be among the first people in the world who will be
+                            able to see all the episodes of this series. At the fair, the series "Ahsoka" will be shown
+                            in a small cinema that we have set up just for you. </p>
+                        <a href="#Uvod">RESERVE
+                           
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="pravougaonik" id="DrugiPravougaonik">
+
+                    <img src="Slike/1Home/SW pravougaonik.jpg" alt="">
+
+                        
+                            <h1 class=" over hidden">CONTACT US
+
+                                <span></span>
+                            </h1>
+        
+                            <div id="Ikonice">
+                                <a href="https://www.instagram.com/starwars/" target="_blank"><img src="Slike/2Series/E-mail.png" alt="Contact"></a>
+                                <a href="#Menu"> <img src="Slike/2Series/Web.png" alt="Web site"></a>
+                                <a href="https://www.google.com/maps/place/%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8+%D1%81%D0%B0%D1%98%D0%B0%D0%BC/@44.7956972,20.4341459,15z/data=!4m6!3m5!1s0x475a6fe3faf71edd:0x82461aa24f967646!8m2!3d44.7956972!4d20.4341459!16s%2Fm%2F043k9td?entry=ttu" target="_blank"> <img src="Slike/2Series/Location.png" alt="Location"></a>
+                            </div>
+
+                </div>
+
+                <div class="pravougaonik" id="TreciPravougaonik">
+                    <img src="Slike/1Home/giphyasoka.gif" alt="Clones">
+
+                </div>
+            </div>
+
+
+            <div id="AsokaOpis">
+                <div class="asokaOpisText">
+                    <p>After the fall of the Galactic Empire, former Jedi Knight Ahsoka Tano investigates an emerging
+                        threat to a vulnerable galaxy. <br><br>
+
+                        Ahsoka and Sabine are trying to stop remnant Morgan Elsbeth from reducing Grand
+                        Admiral Thrawn after Ezra Bridger sent himself and Thrawn to another galaxy. <br><br>
+
+                        The Jedi apprentice of Anakin Skywalker, seeks to prevent the return of
+                        Grand Admiral Thrawn following the fall of the Empire. </p>
+                </div>
+            </div>
+
+            <div class="sparcle-container">
+                <img class="sparcle-icon" src="Slike/sparcles/levo3.png" alt="spaceship">
+            </div>
+
+
+            <div id="Reditelj">
+                <div id="rediteljSlika">
+                    <img src="Slike/2Series/2.Reditelj.png" alt="Dave Filoni">
+                </div>
+                <div id="rediteljText">
+                    <q id="text-container">  I wanted a character we could watch have that transformation, where she fully accepts not just who she was, what the good things were about mentor she had. It changes who she is and who she can be in the future.</q> <br><br>
+                    <p>Dave Filoni</p>
+                </div>
+            </div>
+
+            <div class="sparcle-container">
+                <img class="sparcle-icon-smer" src="Slike/sparcles/desno3.png" alt="spaceship">
+            </div>
+
+
+            <div id="NaslovGlumci">
+                <h1>Main cast lineup</h1>
+            </div>
+
+            <div id="AsokaKartica">
+
+                <div id="AsokaKarticaimg"> </div>
+
+                <div class="AsokaKarticaText">
+                    <h1>Ahsoka Tano
+                        (Rosario Dawson)</h1>
+                    <p>Ahsoka Tano, a Togruta female, was a Force-sensitive outcast from the Jedi Order who, after the
+                        Clone Wars, helped establish a network of various rebel cells against the Galactic Empire. Tano
+                        was discovered on her homeworld of Shili by Jedi Master Plo Koon, who brought her to the Jedi
+                        Temple on Coruscant to receive Jedi training. Following the outbreak of the Clone Wars, Jedi
+                        Grand Master Yoda assigned the young Tano to be the Padawan learner of Jedi Knight Anakin
+                        Skywalker, who nicknamed her "Snips".
+                        Whereas Tano was eager to prove herself, Skywalker had a reputation for recklessness, and they
+                        had a rather difficult start as master and apprentice. Yet they worked together to rescue Rotta.
+                    </p>
+                </div>
+
+            </div>
+
+           
+            
+
+            <div id="KarticeContainer">
+                <div id="KarticeSvi">
+
+                    <div id="KarticeLevo">
+                        <div id="0" class="GlumciKartice">
+                            <img src="Slike/3Cast/3.Sabine.jpg" alt="Sabine">
+                            <h1>Sabine</h1>
+                        </div>
+
+                        <div id="2" class="GlumciKartice">
+                            <img src="Slike/3Cast/3.Hera.jpg" alt="Hera">
+                            <h1>Hera</h1>
+
+                        </div>
+                    </div>
+
+                    <div id="KarticeDesno">
+
+                        <div id="1" class="GlumciKartice">
+                            <img src="Slike/3Cast/3.Bejlon.jpg" alt="Baylon">
+                            <h1>Baylan</h1>
+
+                        </div>
+                        <div id="3" class="GlumciKartice">
+                            <img src="Slike/3Cast/3.Ezra.jpg" alt="Ezra">
+                            <h1>Ezra</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="KarticeOpis">
+                    <h1 id="name"></h1>
+                    <p id="text"></p>
+                    <button id="KarticeNext">NEXT</button>
+                </div>
+
+            </div>
+
+
+            <div class="sparcle-container">
+                <img class="sparcle-icon" src="Slike/sparcles/levo2.png" alt="spaceship">
+            </div>
+
+
+
+            <div id="NaslovEre">
+                <h1>Eras of Star Wars</h1>
+            </div>
+
+            <div id="EreSve">
+                
+
+                <div id="EreBiranje">
+                    <a href="#EraTextJedan">
+                        <div class="Biranje">
+                            <img src="Slike/4Eras/4.Icon1.jpg" alt="Fall of the JEDI Icon">
+                            <p>Fall of the jedi</p>
+                        </div>
+                    </a>
+                    <a href="#EraTextDva">
+                        <div class="Biranje">
+                            <img src="Slike/4Eras/4.Icon2.jpg" alt="Reign of the empire Icon">
+                            <p>Reign of the empire</p>
+                        </div>
+
+                    </a>
+                    <a href="#EraTextTri">
+                        <div class="Biranje">
+                            <img src="Slike/4Eras/4.Icon3.jpg" alt="Rise of The first order Icon">
+                            <p>Rise of The order</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div id="EraTextJedan">
+
+                    <div class="SlikeVremenskihLinija">
+                        
+                        <img src="Slike/4Eras/1Era1.png" alt="Fall of the JEDI Icon">
+                        <div class="ZutaLinija"></div>
+                    </div>
+            
+
+                    <div class="EreText">
+                        <h1>Fall of the JEDI</h1>
+                        <p>Fall of the Jedi era, which covers the decades prior to the destruction of the Jedi Order
+                            through Order 66 and the formation of the Galactic Empire. Several novels and comic book
+                            series, plus the 2022 animated anthology series Tales of the Jedi, have told us more about
+                            the last days of the Jedi and the Republic. However, the works that narrate the most crucial
+                            events of the era – the rise and fall of Anakin Skywalker as a Jedi as well as the
+                            fabricated Clone Wars conflict – are the prequel movies and the 3D Clone Wars series.
+                            <br><br>
+                            At this point, we're getting at least one more season of Tales of the Jedi, plus there's
+                            always room for more comics, novels, and video games.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden poster" id="EraPosterJedan">
+                    <div id="posterPrvi" class="ErePoster">
+                        <div class="ErePosterLeviDeo">
+                            <p>In Hall 1 you
+                                will be able to
+                                see everything related to the
+                                Fall of the Jedi era - from costumes and lightsabers to original movie portraits.
+                            </p>
+                            <!--<h1>HALL 1</h1>-->
+                        </div>
+                        <img src="Slike/4Eras/4.Poster1.jpg" alt="Fall of the JEDI Poster">
+                    </div>
+                </div>
+
+
+                <div id="EraTextDva">
+
+                    <div class="SlikeVremenskihLinija">
+                        <img src="Slike/4Eras/2era2.png" alt="Reign of the empire Icon">
+               
+                    </div>
+
+                    <div class="EreText">
+                        <h1>Reign of the Empire</h1>
+                        <p>This era starts right after Order 66 and is characterized by the darkness and injustice which
+                            covers almost the entire galaxy. The surviving Jedi are on the run or in hiding, and the
+                            Galactic Empire is quickly extending its reach, exploiting the weak and suppressing freedom
+                            everywhere they can. Only a handful of proto-rebels dare stand against the might of the
+                            Emperor's regime.
+                            <br><br>
+                            A lot of games, comic books, and novels take place during this period, as there's plenty of
+                            space to tell stories in which heroes have to dodge and fight against Imperial forces. In
+                            the current canon, the biggest works released so far are the Star Wars Jedi games, the
+                            Obi-Wan Kenobi series, the Han Solo spinoff movie, and The Bad Batch.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden poster" id="EraPosterDva">
+                    <div class="ErePoster">
+                        <div class="ErePosterLeviDeo">
+                            <p>In Hall 2 you
+                                will be able to
+                                see everything related to the
+                                Reign of the Empire era - from costumes and lightsabers to original movie portraits.</p>
+                            <!--<h1>HALL 2</h1>-->
+                        </div>
+                        <img src="Slike/4Eras/4.Poster2.webp" alt="Reign of the empire Poster">
+                    </div>
+                </div>
+
+
+                <div id="EraTextTri">
+
+                    <div class="SlikeVremenskihLinija">
+                        <img src="Slike/4Eras/3era3.png" alt="Rise of The first order Icon">
+                    </div>
+
+                    <div class="EreText">
+                        <h1>Rise of The First Order</h1>
+                        <p>The Rise of the First Order only lasts (roughly) one year, but it's a very eventful year for
+                            the galaxy as a whole. The New Republic is in disarray after the sudden destruction of the
+                            entire Hosnian Prime system, and the First Order emerges from uncharted sectors of space to
+                            take over the galaxy and reignite Palpatine's dream while trying to avoid the fallen
+                            Empire's mistakes. During this time, the Resistance is the only thing that stands between
+                            them and total victory.
+                            <br><br>
+                            Unbeknownst to pretty much everyone but Palpatine's closest, the Sith Eternal cult had
+                            developed a Contingency plan in Exegol, a desert planet located within the depths of the
+                            Unknown Regions. While Darth Sidious' spirit regained strength inside a damaged cloned body,
+                            Supreme Leader Snoke was created as a stand-in puppet leader for the First Order.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden poster" id="EraPosterTri">
+                    <div class="ErePoster">
+                        <div class="ErePosterLeviDeo">
+                            <p>In Hall 3 you
+                                will be able to
+                                see everything
+                                related to the
+                                Rise of the first Empire era - from costumes and lightsabers to original movie
+                                portraits.</p>
+                            <!--<h1>HALL 3</h1>-->
+                        </div>
+                        <img src="Slike/4Eras/4.Poster3.jpg" alt="Rise of The first order Poster">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="NaslovMerch">
+                <h1>Star Wars Merchandise</h1>
+            </div>
+
+            
+
+
+            <div id="MerchKarticeSve">
+                <div id="kartica1" class="MerchKarticaDeo gore levo ">
+                    <img src="Slike/5Merch/5.Merch1.jpg" alt="T-shirt">
+
+                    <div class="MerchKarticaNaslovBuy">
+                        <a href="#Uvod">T-SHIRT</a>
+                        <h3>You can buy it now!</h3>
+                        <p>T-shirts of perfect quality and various prints</p>
+                    </div>
+                </div>
+
+                <div id="kartica2" class="MerchKarticaDeo gore sredina">
+                    <img src="Slike/5Merch/5.Merch2.jpg" alt="Cap">
+
+                    <div class="MerchKarticaNaslovBuy">
+                        <a href="#Uvod">CAP</a>
+                        <h3>You can buy it now!</h3>
+                        <p>Caps that you can wear anywhere you want</p>
+                    </div>
+                </div>
+
+                <div id="kartica3" class="MerchKarticaDeo gore desno">
+                    <img src="Slike/5Merch/5.Merch3.jpg" alt="Magnet">
+
+                    <div class="MerchKarticaNaslovBuy">
+                        <a href="#Uvod">MAGNET</a>
+                        <h3>You can buy it now!</h3>
+                        <p>A magnet that will decorate your refrigerator</p>
+                    </div>
+                </div>
+
+                <div id="kartica4" class="MerchKarticaDeo dole levo">
+                    <img src="Slike/5Merch/5.Merch4.jpg" alt="Sticker">
+
+                    <div class="MerchKarticaNaslovBuy">
+                        <a href="#Uvod">STICKER</a>
+                        <h3>You can buy it now!</h3>
+                        <p>You can stick the sticker anywhere you want</p>
+                    </div>
+                </div>
+
+                <div id="kartica5" class="MerchKarticaDeo dole sredina">
+                    <img src="Slike/5Merch/5.Merch5.jpg" alt="Badge">
+
+                    <div class="MerchKarticaNaslovBuy">
+                        <a href="#Uvod">BADGE</a>
+                        <h3>You can buy it now!</h3>
+                        <p>You can use badge or give it as a small gift</p>
+                    </div>
+                </div>
+
+                <div id="kartica6" class="MerchKarticaDeo dole desno">
+                    <img src="Slike/5Merch/5.Merch6.jpg" alt="Brooch">
+
+                    <div class="MerchKarticaNaslovBuy">
+                        <a href="#Uvod">BROOCH</a>
+                        <h3>You can buy it now!</h3>
+                        <p>This brooch can complement your outfit</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="LegoGame">
+
+                <div id="LegoDeo">
+                    <div class="LegoGameDelic">
+                        <!--<h1>Star Wars LEGO</h1>-->
+                        <img src="Slike/5Merch/giphy.gif" alt="Lego">
+                        <p><span>LEGO SETS</span> <br> At the Star Wars event, you will have the chance to live assemble lego blocks.</p>
+                    </div>
+                </div>
+
+                <div id="GameDeo">
+                    <div class="LegoGameDelic">
+                        <!--<h1>live game tryout</h1>-->
+                        <img src="Slike/5Merch/giphyigrica.gif" alt="Game">
+                        <p><span>VIDEO GAME</span> <br> Star Wars Jedi: Survivor is newest game that you will be able to play for free. </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="FormaStranica">
+
+                <div id="Uvod">
+                    <h1>Buy online from our site</h1>
+                    <p class="size20">You have the opportunity to easily order things from our website right now. Fill in the information correctly so that you can buy a ticket, reserve a seat or order something from our store.</p>
+                </div>
+
+                <div id="FormaCela">
+                    
+
+                    <form>
+                        <div class="Polje">
+                            <label for="SelectOrder" class="size20">Select what you want to order</label>
+                            <select name="order" id="SelectOrder">
+                                <option value="ticket" >Ticket</option>
+                                <option value="reservation">Reservation</option>
+                                <option value="merch" >Merch</option>
+                            </select> <br>
+                        </div> 
+
+                        <br>
+                        <div class="Polje">
+                            <label for="FullName" class="size20">Full name *</label>
+                            <input type="text" name="FullName" id="FullName" required> <br>
+                        </div>
+                        
+                        <div class="Polje">
+                            <label for="Adress" class="size20">Adress *</label>
+                            <input type="text" name="Adress" id="Adress" required> <br>
+                        </div>
+                        
+                        <div class="Polje">
+                            <label for="email" class="size20">Email *</label>
+                            <input type="email" name="email" id="email" required> <br>
+                        </div>
+                        
+                        
+
+                        <div id="NaruciPolje">
+                            <button type="button" id="myBtn">ORDER NOW!</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+
+        <div id="FooterLeft">
+            <p>COMPANY</p>
+            <p>SW</p>
+            <p> SW</p>
+        </div>
+
+        <div id="FooterRight">
+
+            <p>CONTACT</p>
+            <P>SW.</P>
+            <p>SW</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <div class="modalwindow" id="modalwindow">
+        <div id="modal-content">
+           <span class="close">&times;</span> id="close1 
+          <p id="modalParagraf">You have successfully filled out the form!</p>
+        </div>
+    </div>
+
+    
+
+    <script src="skripte/hamburger.js"></script>
+    <script src="skripte/kartice.js"></script>
+    <script src="skripte/gallery.js"></script>
+    <script src="skripte/hoverv2.js"></script>
+    <script src="skripte/links.js"></script>
+    <script src="skripte/optimizacijaPravougaonika.js"></script>
+    <script src="skripte/textHighlight.js"></script>
+    <script src="skripte/forma.js"></script>
+    <script src="skripte/modalView.js"></script>
+
+</body>
+
+</html>

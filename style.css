@@ -1,0 +1,2437 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Jost;
+    src: url(Fontovi/Jost-Bold.ttf);
+}
+
+@font-face {
+    font-family: Jost-Italic;
+    src: url(Fontovi/Jost-Italic.ttf);
+}
+
+@font-face {
+    font-family: Jost-Regular;
+    src: url(Fontovi/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: Hodajuci;
+    src: url(Fontovi/Goffik-O.ttf);
+}
+
+*{
+    font-family: Jost;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+
+p {
+    font-family: Jost-Regular;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* --------------------------------------------header-------------------------------------------- */
+
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    justify-content: space-around;
+    position: fixed; 
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+
+header img{
+    height: 81px;
+    width: 134px;
+    background-attachment: fixed;
+}
+
+nav {
+    position: relative; 
+    display: flex;
+}
+
+nav a {
+    color: #FBCA04;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 43.5px;
+    position: relative;   
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FBCA04;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::before {
+    width:100%;
+}
+
+/*HAMBURGER*/
+
+.hamburger, .cross {
+    visibility: hidden;
+	background: none;
+	border: none;
+	color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	cursor: pointer;
+	outline: none;
+    background-color: black;
+  
+}
+
+.hamburger {
+	font-size: 1.4em;
+	line-height: 45px;
+	padding: 5px 15px 0 15px;
+}
+
+.cross {
+	font-size: 3em;
+	line-height: 65px;
+	padding: 2px 17px 0 15px;
+}
+
+
+
+.hamburger:hover, .cross:hover {
+    color: #FBCA04;
+}
+
+
+/* --------------------------------------------footer-------------------------------------------- */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;    
+}
+
+#FooterRight{
+    padding-top: 25px;
+    line-height: 30px;
+}
+
+#FooterLeft p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#FooterRight p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#FooterLeft {
+    padding: 25px 0;
+    line-height: 30px;
+}
+
+#FooterRight{
+    margin-bottom: 25px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#NewMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(Slike/1Home/SW\ Wallpaper.jpg);
+    width: 100%;
+    background-size: contain;
+}
+
+#HodajuciTekst h1{
+    color: white;
+    font-family: Hodajuci; 
+    font-size: 8vw;
+    white-space: nowrap;
+    text-align: center;
+
+    animation: movingText linear;
+    animation-timeline: scroll(root);    
+}
+
+#HodajuciTekst{
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes movingText {
+   
+    to{
+        transform: translate(calc(-50% - 400rem));
+    }
+}
+
+
+
+#heroheaderText {
+    color: white;
+    max-width: 380px;
+    padding: 12% 50px 50px 50px;
+    position: absolute;
+    left: 5%;
+    top: 0;
+    text-align: center;
+   
+} 
+
+#heroheaderText p:nth-child(1){
+    font-size: clamp(38px,2.6vw,2.7vw);
+    font-family: Jost;
+}
+
+#heroheaderText p:nth-child(2){
+    font-family: Jost-Italic;
+    font-size: clamp(28px,2vw,2.1vw) ;
+    position: relative;
+  
+}
+
+#heroheaderText p:nth-child(3) {
+    text-align: justify;
+    margin-bottom: 7%;
+    font-size: clamp(18px,1.3vw,1.4vw);
+}
+
+
+#heroheaderText a {
+    text-decoration: none;
+    color: white;
+    font-family: Jost;
+    font-size: 17px;
+    padding: 10px 20px;
+    transform-origin: center;
+    transition: all;
+    border: white 2px solid;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    font-weight: normal;
+}
+
+
+#heroheaderText a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+
+
+
+#Main{
+    max-width: 1920px;
+    align-items: center;
+    margin: 0 auto;
+    background: url(Slike/1Home/SW\ Wallpaper.jpg) repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.size20{
+    font-size: 1.25em;
+}
+
+p {
+    font-size: 1.125em;
+} 
+
+
+
+/* --------------------------------------------H  O  M  E-------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+#TekstnaHeroHeader p{
+    padding-top: 20%;
+}
+
+
+/*---------*/
+
+@keyframes slidy {
+	0% {left: 0%;}
+	20% {left: 0%;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100% {left: -400%;}
+}
+
+div#HeroHeader {
+	overflow: hidden;
+	position: relative;
+}
+
+div#HeroHeader figure img {
+	width: 20%;
+	min-height: 400px;
+	max-height: 990px;
+	object-fit: contain;
+	float: left;
+}
+
+div#HeroHeader figure {
+	width: 500%;
+	animation: 20s slidy infinite;
+	position: relative;
+}
+
+
+/*---------*/
+
+
+
+#KarteProdaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background: url(Slike/1Home/KarteProdajaSlika.jpg) ;
+    object-fit: cover;
+    color: white;
+    margin-bottom: 8%;
+    margin-top: 7%; 
+}
+
+#KarteProdaja h1 {
+    color: #FBCA04;
+    padding: 3% 0 1% 0;
+}
+
+
+#KarteProdaja a {
+    text-decoration: none;
+    color: white;
+    font-family: Jost;
+    padding: 10px 20px;
+    transform-origin: center;
+    transition: all;
+    font-size: 15px;
+    border: white 2px solid;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    margin-bottom: 3%;
+}
+
+#KarteProdaja p {
+    padding: 30px 30% 2% 30%;
+    text-align: justify;
+}
+
+
+#KarteProdaja a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+
+
+#ProdajaKarata{
+    width: 60%;
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+}
+
+#kockaKarte{
+    width: 40%;
+    background-color: white;
+    border-radius: 10%;
+    margin-right: 10%;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#kockaKarte:hover{
+    background-color: #FBCA04;
+}
+
+#crnaLinijaKarte p:hover {
+    color: #fff;
+}
+
+#kockaKarte:hover p {
+    color: white;
+}
+
+#ProdajaKarata img{
+    width: 100%;
+    height: 303px;
+    border-radius: 10%  10% 0 0;
+}
+
+#crnaLinijaKarte p {
+padding: 10px;
+color: black;
+font-weight: bold;
+font-size: 30px;
+text-align: center;
+}
+
+#opisKarte{
+    width: 40%;
+    height: 200px; 
+    text-align: justify; 
+}
+
+#opisKarte h1{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #FBCA04; 
+}
+
+
+
+#History {
+    display: flex;
+    margin: 100px 0;
+    gap: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#opisHistory {
+    display: flex;
+    align-items: center;
+}
+
+#opisHistory h1 {
+    font-size: 65px; 
+    writing-mode: vertical-lr;
+    color: #FBCA04;
+    align-self: flex-start;
+}
+
+#opisHistory p {
+    max-width: 400px;
+    text-align: justify;
+    color: white;  
+    background-color: black;  
+}
+
+#crniPravougaonikHistory {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.textPoligonHistory{
+    position: relative;
+    text-align: center;  
+    max-width: 400px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.textPoligonHistory h3 {
+   
+    position: absolute;
+    margin: 0;
+    color: #3d3d3d;
+    font-size: 80px;
+    top: -60px;
+    left: 0;
+    z-index: 1;
+}
+
+.textPoligonHistory p {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    max-width:400px ;
+    text-align: justify;
+    margin: 0 auto;
+    color: white !important;  
+}
+
+
+
+#WhatYouCanExpect{
+    text-align: center;
+    margin-bottom: 50px;
+    width: 63%;                           
+}
+
+#WhatYouCanExpect h1 {
+    margin-bottom: 20px;
+    color: #FBCA04;
+    text-align: center;
+}
+
+#Poglavlja {
+    display: flex;                                   
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#Poglavlja:nth-child(1), #Poglavlja:nth-child(3){
+    margin-right: 3%;
+}
+
+.poglavlje {
+    width: 287px;
+    height: 324px;
+    margin-bottom: 2em;
+    color: rgba(0, 0, 0,0);
+    position: relative;
+}
+
+#poglavlje1 {
+    background-image: url(Slike/1Home/3.AsokaManja1.jpg);
+    width: 287px;
+    height: 324px;
+    clip-path:polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%); 
+}
+
+#poglavlje2 {
+    background-image: url(Slike/1Home/1.WhatToExpect22.jpg) ;
+    width: 287px;
+    height: 324px;
+    clip-path:polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+
+#poglavlje3 {
+    background-image: url(Slike/1Home/1.WhatToExpect33.jpg);
+    width: 287px;
+    height: 324px;
+    clip-path:polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+}
+
+#poglavlje4 {
+    background-image: url(Slike/1Home/Store4.jpg);
+    width: 287px;
+    height: 324px;
+    clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+}
+
+
+.poglavlje h3 {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 187px;
+    padding: 60px 55px 33px 55px;
+}
+
+.poglavlje p {
+    width: 185px;
+    text-align: center;
+    padding: 0 55px;
+}
+
+
+#poglavlje1::before {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 1;
+    position: absolute; 
+}
+
+#poglavlje2::before {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 1;
+    position: absolute; 
+}
+
+#poglavlje3::before {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 1;
+    position: absolute; 
+}
+
+#poglavlje4::before {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 1;
+    position: absolute; 
+}
+
+.poglavlje p {
+    position: relative;
+    z-index: 3;
+}
+
+.poglavlje h3 {
+    position: relative;
+    z-index: 3;
+}
+
+
+.poglavlje:hover {
+    position: relative;
+    color: white
+}
+
+#poglavlje1:hover::before {
+    background-color: rgba(0, 0, 0, 0.65);
+    clip-path:polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+}
+
+#poglavlje2:hover::before {
+    background-color: rgba(0, 0, 0, 0.65);
+    clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+}
+
+#poglavlje3:hover::before {
+    background-color: rgba(0, 0, 0, 0.65);
+    clip-path:polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+}
+
+#poglavlje4:hover::before {
+    background-color: rgba(0, 0, 0, 0.65);
+    clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+}
+
+
+
+/* --------------------------G A L L E R Y-------------------------- */
+
+
+#gallery {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    width: 60%;
+    margin: 2% auto;
+}
+
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#image-container img {
+    width: 35%; 
+    margin: 0 5px;  
+}
+
+#image-container .image-name {
+    position: absolute;
+    bottom: -36px; 
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #FBCA04;
+}
+
+
+#image-container img.main-image {
+    width: 40%; 
+}
+
+
+#image-container img.small-image {
+    filter:brightness(0.3)
+}
+
+
+#gallery  button {
+    padding: 9px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(19, 19, 19); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; 
+    transition: background-color 0.5s ease, transform 0.2s ease; 
+    z-index: 100;
+}
+
+
+#gallery button:hover {
+    background-color: #383838;
+}
+
+
+/* --------------------------------------------S  E  R  I  E  S-------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+#NaslovSeries {
+    font-size: 35px;
+    margin: 7% 0 3% 0;
+    color: #FBCA04;
+}
+
+#TriPravougaonika {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px; 
+}
+
+#PrviPravougaonik, 
+#DrugiPravougaonik, 
+#TreciPravougaonik {
+    display: flex;
+    flex: 1 1 30%; 
+    min-width: 300px; 
+    position: relative; 
+}
+
+#PrviPravougaonik {
+    background-color: white;
+    object-fit: contain;
+    text-align: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+
+#PrviPravougaonik h1 span {
+    font-size: 20px;
+}
+
+#PrviPravougaonik a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: black 2px solid;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+
+#PrviPravougaonik a:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+#heroheaderText a {
+    text-decoration: none;
+    color: white;
+    font-family: Jost;
+    font-size: 17px;
+    padding: 10px 20px;
+    transform-origin: center;
+    transition: all;
+    border: white 2px solid;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    font-weight: normal;
+}
+
+
+#heroheaderText a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+
+
+#textUnutra {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    align-self: center;
+   
+}
+
+#textUnutra p {
+    text-align: justify;
+    padding-bottom: 15px;
+    margin-top: 15%;
+}
+
+#textUnutra a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    margin: 10px;
+    z-index: 1;
+    
+}
+
+
+
+
+#DrugiPravougaonik {
+  justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.pravougaonik {
+    height: 100%;
+}
+
+.pravougaonik img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+#DrugiPravougaonik h1 {
+    color: #fff;
+    text-align: center;
+    align-self: center;
+    width: fit-content;
+    z-index: 1; 
+    position: relative;
+}
+
+#DrugiPravougaonik h1::before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #fff;
+transform-origin: center;
+transform: scaleX(0);
+transition:transform 100ms ease-in-out;
+}
+
+#DrugiPravougaonik h1.hovered::before {
+    transform: scaleX(1);
+}
+
+#ContactIkonice{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#Ikonice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    z-index: 2;
+    gap:20px;
+}
+
+#Ikonice img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    position: static;
+} 
+
+#DrugiPravougaonik:hover #Ikonice {
+    opacity: 1;
+}
+
+#Ikonice img:hover {
+    opacity: 0.8;
+} 
+
+#Ikonice :nth-child(1),
+#Ikonice :nth-child(2),
+#Ikonice :nth-child(3) {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    #PrviPravougaonik, 
+    #DrugiPravougaonik, 
+    #TreciPravougaonik {
+        flex: 1 1 100%; 
+        min-width: auto;
+    }
+
+    #PrviPravougaonik{
+        align-items: center;
+    }
+
+    #PrviPravougaonik h1{
+        display: none;
+    }
+}
+
+
+
+
+
+
+#AsokaOpis {
+    background-image: url(Slike/2Series/AhsokaOpis.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%; 
+    height: 610px; 
+    clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 75%);
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#AsokaOpis p {
+    width:  34%;
+    height: 340px;
+    padding: 11.3% 9% 9% 23%;
+    text-align: justify;
+}
+
+
+
+
+#Reditelj {
+    margin: 30px 10% 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#rediteljSlika img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+
+#rediteljSlika {
+    border-radius: 50%;
+}
+
+#rediteljText {
+    position: relative;
+    width: 639px;
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px 0 0 20px;
+    color: white;  
+    background-color: black;
+}
+
+#text-container {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #FBCA04;
+}
+
+#rediteljText span {
+    font-family: Jost-Italic;
+}
+
+#rediteljTex p {
+    font-family: Jost;
+}
+
+
+
+/* --------------------------------------------C  A  S  T  S-------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+#NaslovGlumci {
+    font-size: 35px;
+    margin: 7% 0 0% 0;
+    color: #FBCA04;
+}
+
+
+#AsokaKartica {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+#AsokaKarticaimg{
+    display: block;
+    object-fit: cover;
+    width: 60%;
+    height: 600px;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    align-self: flex-start;
+    background-image: url(Slike/3Cast/Asokica.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+#AsokaKartica:hover #AsokaKarticaimg {
+    background-image: url(Slike/3Cast/AsokicaHover.png);
+    transition: all 0.5s;
+}
+
+.AsokaKarticaText {
+    width: 50%;
+    margin:4% 16% 0 3%;
+    color: white;  
+    background-color: black;
+
+}
+.AsokaKarticaText  p {
+    text-align: justify;
+    margin:24px 0 0 0;
+    font-size: 20px;
+}
+
+
+
+
+
+#SabinaKartica{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+#SabinaKarticaSlika {
+    width: 35%;
+}
+
+#SabinaKarticaSlika img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#SabinaKarticaOpis{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px 10px 10px 10px ;
+    width: 65%;
+}
+
+#SabinaKarticaOpis h1{
+    margin: 20px 30px 30px 50px;
+}
+
+#SabinaKarticaOpis p{
+    margin: 0 50px;
+    text-align: justify;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#KarticeContainer{
+   display: flex;
+   margin: 0 15%;
+   width: 70%;
+}
+
+#KarticeOpis{
+    align-self: center;   
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    color: white;  
+    background-color: black;
+}
+
+#KarticeOpis > h1 {
+color: #FBCA04;
+}
+
+#KarticeOpis p {
+    margin: 5px 0; 
+    height: auto; 
+    text-align: justify;
+    width: 100%;
+}
+
+#KarticeOpis > button{
+    background-color: #FBCA04;
+    padding: 5px;
+    width: 100px;
+    height: 50px; 
+    border: 0;
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+#KarticeNext:hover{
+    background-color: hsl(48, 97%, 40%);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#KarticeSvi{
+    display: flex;
+    gap: 8%;
+    margin: 1% 10% 1% 0%;
+}
+
+.GlumciKartice{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin: 50px 0;
+    transition: all 0.3s;
+}
+
+
+#KarticeLevo{
+    margin-top: 15%;
+}
+
+.GlumciKartice img {
+    display: block;
+    border-radius:10px 10px 0 0;
+    width: 230px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.GlumciKartice h1{
+    background-color: white;
+    color: black;
+    border-radius:  0 0 10px 10px;
+    padding: 10px;
+}
+
+.highlited{
+    position: relative;
+    transform: translateY(-10%);
+}
+
+.highlitedH1{
+    background-color: #FBCA04 !important;
+}
+
+.uvuci {
+    margin-left: 50px;
+}
+
+
+/* --------------------------------------------M E R C H-------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+#NaslovMerch {
+    font-size: 35px ;
+    margin: 3% 0 0% 0;
+    color: #FBCA04;
+}
+
+#WhereYouCanFindUs {
+    width: 63%;
+    display: flex;
+    background-color: #06222E;
+    margin-bottom: 100px;  
+}
+
+.WhereFindUsDeo {
+    margin: 55px 5%;    
+}
+
+.WhereFindUsDeo h3 {
+    color: #FBCA04;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.WhereFindUsDeo p {
+    color: white;
+    text-align: justify;
+}
+
+
+
+
+
+#NaslovOurMerch {
+    color: #FBCA04;
+    padding: 20px 80px 20px 80px;
+    margin-bottom: 30px;
+}
+
+#MerchKarticeSve{
+    max-width: 63%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.MerchKarticaDeo{
+    margin: 20px;
+    max-width: 270px;
+    align-self: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.MerchKarticaDeo img {
+    display: block;
+    width: 100%;
+    max-height: 244px;
+    border-radius: 10px 10px  0 0 ;
+    filter: brightness(0.9);
+}
+
+.MerchKarticaDeo:hover{
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.MerchKarticaDeo:hover .MerchKarticaNaslovBuy p{
+    font-weight: bold;
+}
+
+
+
+
+.MerchKarticaNaslovBuy{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:  0 0 10px 10px;
+}
+
+.MerchKarticaNaslovBuy a{
+    cursor: pointer;
+    align-self: center;
+    padding: 10px 20px;
+    margin: -25%;
+    border: white 2.5px solid;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.MerchKarticaNaslovBuy p {
+    padding-right: 6%;
+}
+
+.MerchKarticaNaslovBuy h3 {
+    padding-top: 35%;
+}
+
+.MerchKarticaNaslovBuy a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+#LegoGame {
+    display: flex;
+    flex-wrap: wrap;                
+    color: white;
+    margin: 100px 0;
+    justify-content: center;       
+    width: 100%;
+}
+
+#LegoDeo {
+    color: white;  
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 90% 100%);
+}
+
+#GameDeo {
+    color: black;  
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 00% 100%); 
+}
+.LegoGameDelic {
+    position: relative;
+}
+
+.LegoGameDelic p {
+    position: absolute;
+    color: white;
+    height: fit-content;
+    margin: 0 !important;
+}
+
+.LegoGameDelic img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#LegoDeo h1 {
+    padding: 20px 50px 20px 0%;
+    text-align: right;
+}
+
+#GameDeo h1 {
+    padding: 20px 10px 20px 15%;
+}
+
+#LegoDeo h1, #GameDeo h1 {
+    text-transform: uppercase;
+    color: #FBCA04; 
+    animation: promenaboje 3s infinite;
+}
+
+@keyframes promenaboje {
+    0% {color: black;}
+    50% {color: rgb(0, 81, 255);}
+    100% {color: black;}
+}
+
+#LegoDeo p {
+    width: 30%;
+    bottom:10%;
+    left: 10%;
+    width: 40%;
+}
+
+#GameDeo p {
+    bottom:10%;
+    right:10%;
+    width: 40%;
+}
+
+#LegoDeo p, #GameDeo p {
+    font-size: 1.3em;
+}
+
+#LegoDeo span, #GameDeo span {
+    width: 100%;
+    font-size: 2.2vw;
+    font-size: 100%;
+    width: 70%;
+}
+
+#LegoGame p > span {
+color: rgb(255, 255, 255);
+font-size: 30px;
+}
+
+
+
+
+/* --------------------------------------------E R A S-------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+#NaslovEre {
+    font-size: 35px;
+    margin: 5.5% 0 0% 0;
+    color: #FBCA04;
+}
+
+#EreSve {
+    width: 65%;  
+}
+
+#EreSve a{
+    color: black;
+    text-decoration: none;
+}
+
+#EreBiranje {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    padding: 1%;
+    margin: 20px auto;
+    flex-wrap: wrap; 
+}
+
+
+#EreBiranje img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#EreBiranje p {
+    padding-top: 7%;
+    font-weight: bold;
+}
+
+.Biranje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+
+#EraTextJedan, #EraTextDva, #EraTextTri {
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+
+.ZutaLinija {
+    background-color: #FBCA04;
+    width: 15px;
+    height: 150%;
+    position: absolute;
+    left: 29.5%;
+    z-index: 0;
+}
+
+.SlikeVremenskihLinija {
+    text-align: center;
+    width: 30%;
+}
+
+.SlikeVremenskihLinija img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 100px 50px 30px 50px;
+    z-index: 50;
+}
+
+.SlikeVremenskihLinija img {
+    animation: rotacija 20s  linear infinite;
+}
+
+@keyframes rotacija {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+
+.EreText {
+    width: 60%;
+    color: white;  
+    background-color: black;
+    margin-left: 10%;
+}
+
+.EreText h1 {
+    margin: 50px 0 30px 0;
+}
+
+.EreText p {
+    text-align: justify;
+}
+
+
+.ErePoster {
+    background-color: white;
+    width: 60%;
+    height: 270px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    float: right; 
+    margin: 30px 4% 100px 0;
+    overflow: hidden;
+}
+
+.ErePosterLeviDeo {
+    width: 40%;
+}
+
+.ErePoster img {
+    width: 60%;
+    height: 270px;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+}
+
+.ErePoster p {
+    width: 90%;
+    padding: 20% 0% 2% 7%;
+}
+
+.ErePoster h1 {
+    color: #FBCA04;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+
+/* --------------------------------------------F O R M A-------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+#FormaStranica {
+    margin: 5% 10%;
+    width: 80%;
+}
+
+#Uvod {
+    width: 100%;
+}
+
+#Uvod h1{
+    color: #FBCA04;
+    font-size: 60px;
+    width: 100%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+#Uvod p {
+    margin: 10px auto;
+    width: 55%;
+    color: white;
+    background-color: black;
+    text-align: justify;
+}
+
+#FormaCela {
+    color: #FBCA04;
+    padding: 2% 5%;
+    border-radius: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#FormaCela p {
+    padding-bottom: 30px;
+    color: white;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.Polje {
+    margin: 5px auto;
+}
+
+input, select {
+    border-radius: 20px;
+    border: 0;
+    height: 30px;
+    width: 50%;
+    padding-left: 20px;
+}
+
+#NaruciPolje button {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    padding: 1% 5%;
+    border-radius: 30px;
+    border: 0;
+    font-size: 1.125em;
+    margin: 30px auto 0 auto;
+    display: block;
+    transition: 0.5s;
+}
+
+#NaruciPolje button:hover {
+    background-color: #FBCA04;
+    cursor: pointer;
+    width: 50%; 
+}
+
+
+input, select, label{
+    display: block;
+    margin: 5px auto;
+}
+
+label {
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width:1500px) {
+     .ZutaLinija {
+        height: 170%;
+        left: 30%;
+     }
+}
+
+@media screen and (max-width:1215px) {
+    .ZutaLinija {
+       height: 190%;
+       left: 31%;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    .ZutaLinija {
+       height: 200%;
+    }
+}
+
+
+
+
+
+
+/****************************************************************          TABLET         *****************************************************************************/
+
+@media screen and (max-width:1000px) {
+
+    
+
+    /*HAMBURGER*/
+   .menu {
+    display:  block;
+
+    }
+
+
+    header a{
+       text-align: center;
+    }
+
+    header  nav a{
+        margin: 0 15px;
+    }
+
+    #Main{
+        margin: 0 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #FooterRight {
+        margin: 0 0 20px 0;
+    }
+
+
+    #NaslovSeries, #NaslovGlumci, #NaslovMerch, #NaslovEre{
+        font-size: 28px;
+    }
+
+    #NaslovGlumci,#NaslovEre {
+        margin-top: 12%;
+    }
+
+    #NaslovSeries{
+        margin-top: 6%;
+        text-align: center;
+    }
+
+    #NaslovMerch {
+        text-align: center;
+    }
+
+    #Uvod h1 {
+        font-size: 50px;
+    }
+
+    #KarteProdaja {
+        margin: 13% 0 10% 0;
+    }
+
+
+    #LegoGame, #CosplayText, #PravougaonikBeloPlavi, #SabinaKartica, #KarticaAnakin, #WhereYouCanFindUs, #Audience, #AsokaKartica {
+        flex-direction: column;
+        display: flex;
+    }
+
+    #CrnaLinijaMain, #heroheaderText, .ZutaLinija, .SlikeVremenskihLinija img, .SlikeVremenskihLinija {
+        display: none;
+    }
+
+    #kockaKarte, #opisKarte, #AsokaOpis p {
+        width: 70%;
+    }
+
+    #Reditelj, #AudienceComments, #AudienceExpectations, #Cosplay {
+        width: 80%;
+    }
+
+    #PravougaonikBeloPlavi1, #PravougaonikBeloPlavi2, .AsokaKarticaText, #SabinaKarticaSlika, #SabinaKarticaOpis, #ceoAnakin, .ErePoster, .EreText {
+        width: 90%;
+    }
+
+    #AsokaKartica img, #KarticaAnakin img, #WhereYouCanFindUs, #LegoDeo, #GameDeo {
+        width: 100%;
+    }
+
+    #TriPravougaonika {
+        margin-bottom: 7%;
+    }
+    
+    #kockaKarte {
+        margin-right: 0;
+        order: 2;
+        margin-bottom: 50px;
+    }
+    #opisKarte{
+        margin-bottom: 110px;
+    }
+
+    #History{
+        gap: 0px;
+        margin-top: 50px;
+    }
+
+    #opisHistory {
+        margin: 0 10% 0 10%;
+    }
+
+    #crniPravougaonikHistory, #AsokaOpis, #LegoDeo, #GameDeo {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);   
+    }
+
+    #crniPravougaonikHistory {
+        margin: 6% 10% 0 10%;
+        padding-top: 30px;
+    }
+
+    .textPoligonHistory p {
+        color: black;
+        margin-left:45px ;
+        text-align: left;
+    }
+
+    .textPoligonHistory h3 {
+        margin-left:10%;
+        padding: 3px 50px 3px 5px;
+    }
+
+    #Pravougaonik2Dole {
+        margin-bottom: 5%;
+    }
+
+    #AsokaOpis {
+        margin-top: 30px;
+    }
+
+    #AsokaOpis p {
+        padding: 25% 15% 17% 15%;
+    }
+
+    #Reditelj {
+        margin-top: 70px;
+    }
+
+    #rediteljText {
+        margin: 20px 0 0 0;
+    }
+
+    #KarticeContainer {
+        flex-direction: column;
+    }
+    
+    #RecI {
+        margin: 30px 0 40px 0;
+    }
+
+    #KarticaAnakin p, #KarticaAnakinDole {
+        padding: 10px 20px;
+    }
+
+    #KarticaAnakin img{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #KarticaAnakin p {
+        border-radius:  0 0 0 0;
+    }
+
+    #AsokaKarticaimg {
+        height: 350px;
+        clip-path: none;
+        width: 90%;
+        align-self: center;
+    }
+
+    .AsokaKarticaText {
+        margin: 4% 5% 5% 5%;
+    }
+
+
+    #EraTextJedan, #EraTextDva, #EraTextTri {
+        margin: 0 auto;
+    } 
+
+
+    .EreText {
+        margin: 0 auto;
+    }
+
+    #LegoGame h1 {
+        text-align: left;
+    }
+
+    #LegoDeo {
+        margin-bottom: 30px;
+    }
+
+    #GameDeo h1 {
+        padding-left: 10px;
+    }
+    
+    #GameDeo p {
+        left: 10%;
+        font-size: 1.3em;
+    }
+
+    #LegoDeo p {
+        font-size: 1.3em;
+    }
+
+    #CosplayText p:first-child  {
+        margin: 0 0 20px 0;
+    }
+
+    #NaruciPolje button {
+        width: 50%;   
+    }
+
+
+    #poglavlje1, #poglavlje2, #poglavlje3, #poglavlje4 {
+        clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); 
+    }
+
+
+    #poglavlje1:hover::before, #poglavlje2:hover::before, #poglavlje3:hover::before, #poglavlje4:hover::before {
+        background-color: rgba(0, 0, 0, 0.65);
+        clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
+    }
+
+
+    .sparcle-container {
+        display: none;
+    }
+
+    .klasaUdesno{
+        transform: translateX(0);
+    }
+    
+    .klasaUlevo{
+        transform: translateX(0); 
+    }
+    
+    .klasaUdole{
+        transform: translateY(0);
+    }
+    
+    .klasUgore{
+        transform: translateY(0); 
+    }
+
+    div#HeroHeader figure img {
+        min-height: auto; 
+    }
+
+    #gallery{
+        width: auto;
+        margin: 3%;
+    }
+
+    .ErePoster{
+        float: none;
+        margin-right: 0;
+        width:fit-content;
+    }
+
+    .ErePoster p, #Uvod p {
+        font-size: 16px;
+    }
+
+    #KarticeContainer{
+        display: flex;
+    }
+
+    #KarticeLevo,#KarticeDesno{
+        display: flex;
+        margin:0;
+        margin-bottom: 0;
+    }
+
+    .GlumciKartice img{
+        height: 180px;
+        width: 150px;
+    }
+
+    .GlumciKartice {
+        margin: 10px;
+    }
+
+    #KarticeOpis{
+        display: flex;
+        width: 70%;
+    }
+
+    #KarticeSvi{
+        margin: 0;
+        gap: 5px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #KarticeContainer{
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+
+    #KarticeNext{
+        align-self: center;
+    }
+
+    #AsokaKartica {
+        margin-bottom: 10%;
+    }
+}
+
+
+
+/****************************************************************          TELEFON         ************************************************************************/
+
+@media screen and (max-width:650px) {
+
+   
+    body{
+        background-color: black;
+        overflow-x: hidden;
+    }
+
+    header {
+        position: static;
+    }
+
+    header, #MerchKarticeSve, #KrugoviZajedno {
+        flex-direction: column;
+    }
+
+    header a {
+        display: block;
+    }
+
+    .menu a {
+        margin-bottom: 2%;
+    }
+
+
+
+    #redosled{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #redosled:nth-child(3){
+        order: -1;
+    }
+
+    div#HeroHeader figure img {
+        min-height: auto;
+        max-height: auto;
+        object-fit: contain;
+        float: left;
+    }
+    
+
+
+    /*HAMBURGER*/
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+    }
+    
+
+    nav a:nth-child(3){
+        order: -1;
+    }
+    
+    .hamburger, .cross {
+        visibility: visible;
+    }
+
+
+
+    #KrugoviZajedno{
+        align-items: center;
+    }
+
+    #TextCrniPravougaonik{
+        margin: 55px 5% 65px 5%;
+        width: 90%;
+    }
+
+    #TextCrniPravougaonik p:first-child, #TextCrniPravougaonik p:nth-child(3) {
+        padding: 7%;
+    }
+    
+    #TextCrniPravougaonik h3 {
+        padding:3% 50% 3% 10% ;
+        color:black;
+        background-color: #FBCA04;
+        width: fit-content;
+    }
+
+    #krugSve {
+        width: 80%;
+        padding: 0 10% 0 10%;    
+    }
+
+    .krug{
+        margin-bottom: 5%;
+    }
+
+    #opisKarte{
+        padding-bottom: 20%;
+    }
+
+    #KarticeSvi{
+        flex-direction: column;
+    }
+
+    #KarticeSvi img{
+        width: 100%;
+    }
+
+    #KarticeContainer{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px; 
+    }
+
+    #KarticeNext{
+        position: absolute;
+        bottom: 0;
+    }
+
+    #KarticeOpis{
+        position: relative;
+        height:310px;
+    }
+
+    header{
+        margin-bottom: 50px;
+        background-color: black;
+    }
+
+    .GlumciKartice img {
+        height: auto;
+    }
+    
+
+    .show{
+        clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+
+   input,select{
+    width: auto;
+   }
+
+   select{
+    width: 181px;
+   }
+
+   #textUnutra{
+    margin: auto auto;
+    padding: 0;
+   }
+
+   .MerchKarticaNaslovBuy a{
+    transform: translateY(-27%);
+    padding: 10px 15px;
+   }
+
+   .MerchKarticaNaslovBuy h3{
+    padding: 0;
+    margin-top: 30%;
+    text-align: center;
+   }
+
+  .MerchKarticaNaslovBuy p{
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+  } 
+
+  #KarticeContainer{
+    display: flex;
+}
+
+#KarticeLevo,#KarticeDesno{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    
+}
+
+.GlumciKartice img{
+    height: 150px;
+    width: 100%;
+}
+
+.GlumciKartice {
+    margin: 10px;
+    width: 150px;
+    height: 120px;
+}
+
+#KarticeOpis{
+    display: flex;
+    width: 70%;
+    font-size: 14px;
+}
+
+#KarticeSvi{
+    margin: 0;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#KarticeContainer{
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+
+#KarticeNext{
+    align-self: center;
+    justify-self: flex-start;
+}
+
+#WhatYouCanExpect{
+    width: 100%;
+    align-items: center;
+}
+.poglavlje{
+    width:fit-content;
+}
+.poglavlje img{
+    background-image: cover;
+}
+
+#opisHistory h1{
+    writing-mode: horizontal-tb;
+    font-size: 45px;
+    align-self:  center;
+}
+
+#opisHistory {
+    flex-direction: column;
+}
+
+#NaslovSeries, #NaslovGlumci, #NaslovMerch, #NaslovEre {
+    font-size: 24px;
+}
+
+#Uvod h1 {
+    font-size: 40px;
+}
+
+#History {
+    margin-bottom: 8%;
+}
+
+#NaslovEre, #NaslovGlumci {
+    margin-top: 20%;
+}
+
+#History p, #KarteProdaja p, #PrviPravougaonik p, #AsokaOpis p, #Reditelj p, #AsokaKartica p,  .EreText p{
+    font-size: 17px;
+}
+
+#KarteProdaja h1, #AsokaKartica h1, .EreText h1 {
+    font-size: 28px;
+}
+
+}
+
+
+ 
+
+
+@media screen and (max-width:500px) {
+    
+    .LegoGameDelic img{
+        height: 300px !important;
+    }
+
+    .LegoGameDelic p {
+        font-size: 15px !important;
+    }
+
+    .LegoGameDelic span {
+        font-size: 20px !important;
+        
+    }
+
+}
+
+
+/**************************************************************************modalni prozor*******************************************************************************************/  
+
+.modalwindow {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    position: relative;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+
+#modalParagraf { 
+    width: 40%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1999;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.sparcle-container{
+    position: relative;
+    width: 100%;
+}
+
+
+.sparcle-icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.sparcle-icon-smer{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#History + .sparcle-container img {
+    width: 50px;
+    height: 50px;
+    top:-50%;
+    left: 10%;
+}
+
+#gallery + .sparcle-container img{
+    width: 50px;
+    height: 50px;
+    top:-60%;
+    right: 10%;
+} 
+
+
+#WhatYouCanExpect + .sparcle-container img {
+    width: 50px;
+    height: 50px;
+    top:-50%;
+    left: 15%;
+}
+
+#AsokaOpis + .sparcle-container img{
+    width: 50px;
+    height: 50px;
+    top:-90%;
+    right: 10%;
+} 
+
+#Reditelj + .sparcle-container img {
+    width: 50px;
+    height: 50px;
+    top:-50%;
+    left: 12%;
+}
+
+#KarticeContainer+ .sparcle-container img{
+    width: 50px;
+    height: 50px;
+    top:100%;
+    right: 25%;
+} 
+
+ 
+
+/*POMOCNE KLASE*/
+
+
+
+.klasaUdesno{
+    transform: translateX(10%); 
+}
+
+.klasaUlevo{
+    transform: translateX(-10%); 
+}
+
+.klasaUdole{
+    transform: translateY(10%);
+}
+
+.klasUgore{
+    transform: translateY(-10%);
+}
+
+.hidden{
+opacity: 0;
+filter: blur(5px);
+transform: translateX(-100%);
+transition: all 1s;
+}
+
+.hiddenMobile{
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.hiddenv2{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+.show{
+opacity: 1;
+filter: blur(0px);
+transform: translateX(0);
+}
+
+::-webkit-scrollbar{
+    width: 1em;
+}
+
+::-webkit-scrollbar-track{
+        background-color: black;       
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(126, 126, 126);
+    border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(73, 73, 73);   
+}
+
+
+
+
+
+
